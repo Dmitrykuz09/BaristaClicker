@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Симулятор Бариста</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/cup-icon.svg" />
+  </head>
+
+  <body>
+      <section class="left">
+        <div class="counter_coffee">
+          <p>Кофе: <span class="counter_c">0</span></p>
+        </div>
+  
+        <div class="quan_milk">
+          <p>Молоко: <span class="counter_milk">0</span></p>
+        </div>
+  
+        <div class="counter_beans">
+          <p>Зёрна: <span class="counter_b">100</span></p>
+        </div>
+  
+        <div class="money">
+          <span class="counter_m">0</span>$
+        </div>
+      </section>
+<section class="main_cup">
+  <img src="./assets/paper_cup.png" onclick="incrementMaker()" class="cup_coffee">
+  <audio id="pour-sound" src="./sound/pour.mp3"></audio>
+  <audio id="doh-sound" src="./sound/doh.mp3"></audio>
+</section>
+
+      <section class="right">
+        <div class="sellAndBuy">
+        <img src="./assets/coin.png" onclick="incrementMoney()" class="coin">
+          <audio id="money-sound" src="./sound/cash.mp3"></audio>
+          <audio id="doh-sound" src="./sound/doh.mp3"></audio>
+        <div class="name_sell">
+          <p>продать</p>
+        </div>
+        </div>
+        <div class="buy_bean">
+        <img src="./assets/bag.png" onclick="incrementBeans()" class="buy_beans">
+          <audio id="beans-sound" src="./sound/beans.mp3"></audio>
+          <audio id="doh-sound" src="./sound/doh.mp3"></audio>
+          <div class="name_buy">
+            <p>Купить</p>
+          </div>
+        </div>
+      </section>
+       
+
+    <!-- <p>Продажа 1 чашки кофе = Заработок 2$</p>
+    <p>Покупка 25 зерна = Стоимость 2$</p>
+    <p>сваритть 1 чашку кофе = 10 зерен</p> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

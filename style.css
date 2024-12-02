@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 6s ease infinite;
+  font-family: "IBM Plex Sans", sans-serif;
+  overflow-y:hidden
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  touch-action: manipulation;
+}
+.left {
+  padding-top: 35px;
+  padding-left: 15px;
+  font-size: 21px;
+  width: 165px;
+}
+.counter_coffee {
+  background-color: transparent;
+  border-radius: 4%;
+  width: 160px;
+  text-align: center;
+  border: 1.5px solid black;
+}
+.quan_milk {
+  background-color: transparent;
+  border-radius: 4%;
+  width: 160px;
+  margin-top: 10px;
+  text-align: center;
+  border: 1.5px solid black;
+}
+.counter_beans {
+  background-color: transparent;
+  border-radius: 4%;
+  width: 160px;
+  margin-top: 10px;
+  text-align: center;
+  border: 1.5px solid black;
+}
+.money {
+  background-color: transparent;
+  border-radius: 4%;
+  width: 160px;
+  margin-top: 10px;
+  text-align: center;
+  border: 1.5px solid black;
+}
+
+.main_cup  {
+  display: flex;
+  place-content: center;
+
+}
+.cup_coffee {
+  width: 300px;
+  height: 300px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.cup_coffee:active {
+  transform: scale(1.05);
+  transition: 0.2s;
+  filter: brightness(0.9);
+}
+
+.right {
+position: absolute;
+bottom: 450px;
+justify-items: right;
+right: 15px;
+}
+@media (max-height:552px ) {
+  .right {
+    position: absolute;
+  bottom: 420px;
+  }
+}
+.name_sell, .name_buy {
+  font-size: 22px;
+  position: relative;
+  bottom: 20px;
+  text-align: center;
+}
+
+.coin {
+  width: 100px;
+  height: 100px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.coin:active {
+  transform: scale(0.98);
+  transition: 0.2s;
+  filter: brightness(0.9);
+}
+.buy_bean {
+  position: absolute;
+  place-content: right;
+}
+.buy_beans {
+  width: 100px;
+  height: 100px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.buy_beans:active {
+  transform: scale(0.98);
+  transition: 0.2s;
+  filter: brightness(0.9);
+}
+
+
